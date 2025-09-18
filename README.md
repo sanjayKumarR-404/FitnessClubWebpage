@@ -61,18 +61,27 @@ Simply open `index.html` in your browser to view the app.
 
 ## 📸 Screenshots  
 
-- 🏠 *Landing Page*  
-  <img src="assets/screenshots/home.png" alt="Landing Page Screenshot" width="500"/>  
+- 🖼️ *LogIn Page*  
+  <img src="assets/screenshots/LogIn.png" alt="LogIn Page Screenshot" width="500"/>  
 
-- 🔑 *Authentication Page*  
-  <img src="assets/screenshots/auth.png" alt="Auth Screenshot" width="400"/>  
+- 🖼️ *SignIn Page*  
+  <img src="assets/screenshots/SignIn.png" alt="SignIn Page Screenshot" width="400"/>  
 
-- 🎯 *Goal Tracking Dashboard*  
-  <img src="assets/screenshots/goals.png" alt="Goals Screenshot" width="500"/>  
+- 🖼️ *Home Page*  
+  <img src="assets/screenshots/HomePage.png" alt="Home Page Screenshot" width="500"/>  
 
-- 📊 *Progress Analytics*  
-  <img src="assets/screenshots/analytics.png" alt="Analytics Screenshot" width="500"/>  
+- 🖼️ *About Page*  
+  <img src="assets/screenshots/AboutPage.png" alt="About Page Screenshot" width="500"/>
 
+- 🖼️ *Goal Tracking Page*  
+  <img src="assets/screenshots/GoalTrackingPage.png" alt="Goal Tracking Page Screenshot" width="500"/>
+
+- 🖼️ *Classes Page*  
+  <img src="assets/screenshots/ClassesPage.png" alt="Classes Page Screenshot" width="500"/>  
+
+- 🖼️ *Mentor Page*  
+  <img src="assets/screenshots/MentorPage.png" alt="Mentor Page Screenshot" width="500"/>
+  
 ---
 
 ## 👨‍💻 Author  
