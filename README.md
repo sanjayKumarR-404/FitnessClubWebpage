@@ -62,27 +62,31 @@ Simply open `index.html` in your browser to view the app.
 ## 📸 Screenshots  
 
 - 🖼️ *LogIn Page*  
-  <img src="assets/screenshots/LogIn.png" alt="LogIn Page Screenshot" width="500"/>  
+  <img src="Images/LogIn.png" alt="LogIn Page Screenshot" width="300"/>  
 
 - 🖼️ *SignIn Page*  
-  <img src="assets/screenshots/SignIn.png" alt="SignIn Page Screenshot" width="400"/>  
+  <img src="Images/SignIn.png" alt="SignIn Page Screenshot" width="300"/>  
 
 - 🖼️ *Home Page*  
-  <img src="assets/screenshots/HomePage.png" alt="Home Page Screenshot" width="500"/>  
+  <img src="Images/HomePage.png" alt="Home Page Screenshot" width="500"/>  
 
 - 🖼️ *About Page*  
-  <img src="assets/screenshots/AboutPage.png" alt="About Page Screenshot" width="500"/>
+  <img src="Images/AboutPage.png" alt="About Page Screenshot" width="500"/>
 
 - 🖼️ *Goal Tracking Page*  
-  <img src="assets/screenshots/GoalTrackingPage.png" alt="Goal Tracking Page Screenshot" width="500"/>
+  <img src="Images/GoalTrackingPage.png" alt="Goal Tracking Page Screenshot" width="500"/>
 
 - 🖼️ *Classes Page*  
-  <img src="assets/screenshots/ClassesPage.png" alt="Classes Page Screenshot" width="500"/>  
+  <img src="Images/ClassesPage.png" alt="Classes Page Screenshot" width="500"/>  
 
 - 🖼️ *Mentor Page*  
-  <img src="assets/screenshots/MentorPage.png" alt="Mentor Page Screenshot" width="500"/>
-  
+  <img src="Images/MentorPage.png" alt="Mentor Page Screenshot" width="500"/>
+
+*(... and many more pages such as Services, Classes, Contact, etc.)*  
+
+
 ---
+
 
 ## 👨‍💻 Author  
 
