@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GymFinity | Goal Tracking</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar (copied from index.html for consistency) -->
+    <header>
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="index.html">
+              <img src="assets/logo-white.png" alt="logo" class="logo-white" />
+              <img src="assets/logo-dark.png" alt="logo" class="logo-dark" />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#service">Services</a></li>
+          <li><a href="index.html#class">Classes</a></li>
+          <li><a href="index.html#contact">Blog</a></li>
+          <li><a href="auth.html">Log out</a></li>
+        </ul>
+        <div class="nav__btns">
+          <a href="auth.html" class="btn">Log out</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Goal Tracking Section -->
+    <section class="section__container goal__tracking" id="goal">
+      <h2 class="section__header">Track Your Fitness Goals</h2>
+      <p class="section__description">
+        Stay motivated by tracking your progress. Set your goals, monitor improvements,
+        and celebrate every milestone on your fitness journey.
+      </p>
+
+      <div class="goal__cards" id="goal-cards">
+        <div class="goal__card">
+          <h3>Lose Weight</h3>
+          <p>Target: 10kg in 3 months</p>
+          <div class="progress__bar">
+            <div class="progress" style="width: 40%"></div>
+          </div>
+          <p>Progress: 4kg lost</p>
+        </div>
+
+        <div class="goal__card">
+          <h3>Gain Muscle</h3>
+          <p>Target: +5kg muscle mass</p>
+          <div class="progress__bar">
+            <div class="progress" style="width: 60%"></div>
+          </div>
+          <p>Progress: 3kg gained</p>
+        </div>
+
+        <div class="goal__card">
+          <h3>Improve Cardio</h3>
+          <p>Target: Run 5km under 25min</p>
+          <div class="progress__bar">
+            <div class="progress" style="width: 70%"></div>
+          </div>
+          <p>Progress: Current best - 27min</p>
+        </div>
+      </div>
+
+      <!-- Add Goal Form -->
+      <div class="add__goal">
+        <h3>Add New Goal</h3>
+        <input type="text" placeholder="Goal Title" id="goal-title" />
+        <input type="text" placeholder="Description" id="goal-desc" />
+        <input type="number" placeholder="Progress (%)" id="goal-progress" />
+        <button class="btn" id="add-goal-btn">Add Goal</button>
+      </div>
+    </section>
+
+    <!-- Footer (copied from index.html for consistency) -->
+    <section class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <a href="#" class="footer__logo">
+            <img src="assets/logo-white.png" alt="logo" />
+          </a>
+          <ul class="footer__links">
+            <li>
+              <a href="#"><span><i class="ri-phone-line"></i></span> +91 0987654321</a>
+            </li>
+            <li>
+              <a href="#"><span><i class="ri-map-pin-line"></i></span> New Delhi India</a>
+            </li>
+            <li>
+              <a href="#"><span><i class="ri-mail-line"></i></span> info@fitnesspoint</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#class">Classes</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Membership</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>Gym Hours</h4>
+          <ul class="footer__links">
+            <li>Monday 5am - 10pm</li>
+            <li>Tuesday 5am - 10pm</li>
+            <li>Wednesday 5am - 10pm</li>
+            <li>Thursday 5am - 10pm</li>
+            <li>Friday 5am - 10pm</li>
+            <li>Saturday 5am - 10pm</li>
+            <li>Sunday 5am - 1pm</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2024 Web Design Mastery. All rights reserved.
+      </div>
+    </section>
+
+    <script src="main.js"></script>
+    <script>
+      document.getElementById("add-goal-btn").addEventListener("click", function () {
+        const title = document.getElementById("goal-title").value.trim();
+        const desc = document.getElementById("goal-desc").value.trim();
+        const progress = parseInt(document.getElementById("goal-progress").value.trim());
+
+        if (!title || !desc || isNaN(progress) || progress < 0 || progress > 100) {
+          alert("Please enter valid title, description, and progress (0–100%).");
+          return;
+        }
+
+        const newCard = document.createElement("div");
+        newCard.className = "goal__card";
+        newCard.innerHTML = `
+          <h3>${title}</h3>
+          <p>${desc}</p>
+          <div class="progress__bar">
+            <div class="progress" style="width: ${progress}%"></div>
+          </div>
+          <p>Progress: ${progress}%</p>
+        `;
+        document.getElementById("goal-cards").appendChild(newCard);
+
+        document.getElementById("goal-title").value = "";
+        document.getElementById("goal-desc").value = "";
+        document.getElementById("goal-progress").value = "";
+      });
+    </script>
+  </body>
+</html>
